@@ -8,34 +8,42 @@ const items = [
     {
         id: 1,
         color: "from-red-300 to-blue-300",
-        title: "React Commerce",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://lama.dev",
+        title: "Gov. tender-listed construction materials e-commerce",
+        desc: "I have developed this e-commerce website tailored for the construction industry on behalf of the company I am currently employed with. This platform serves as a centralized hub where contractors can access tenders, materials and related resources efficiently. Utilizing Next.js, I led the frontend development, accounting for 90% of the project's implementation. Notable technologies incorporated include MaterialUI, Tailwind CSS, Redux, among others.",
+        img: "/projects/project1.png",
+        link: "https://www.runway.org.in",
     },
     {
         id: 2,
         color: "from-blue-300 to-violet-300",
-        title: "Next.js Medium Blog",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://lama.dev",
+        title: "Supplier Portal for the E-commerce Platform",
+        desc: "I have spearheaded the development of the supplier portal for our e-commerce website. This portal enables suppliers to seamlessly register, list their products, and manage essential details such as pricing, quantity, and stock units. Leveraging Next.js, I assumed full responsibility for the frontend implementation, accounting for 100% of the project's frontend development. Noteworthy technologies employed include MaterialUI, Tailwind CSS, Redux, among others.",
+        img: "/projects/project2.png",
+        link: "http://supplier.runway.org.in/",
     },
     {
         id: 3,
         color: "from-violet-300 to-purple-300",
-        title: "Vanilla Book App",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://lama.dev",
+        title: "Car View and Rent App",
+        desc: "I developed this application using React.js, integrating an open-source API to retrieve comprehensive details about available cars. Users can conveniently browse through the car listings, make rental bookings, and access their booking history seamlessly.",
+        img: "/projects/project3.png",
+        link: "https://car-view.vercel.app/",
     },
     {
         id: 4,
         color: "from-purple-300 to-red-300",
         title: "Spotify Music App",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        link: "https://lama.dev",
+        desc: "I developed an interactive user interface for a learning platform during my internship at Ebug Technologies, utilizing React.js. It's important to note that this UI prototype is non-functional, focusing solely on the design aspect of the website. My responsibility primarily entailed the development of the user interface using React.js.",
+        img: "/projects/project5.png",
+        link: "https://nimble-crepe-f97813.netlify.app/",
+    },
+    {
+        id: 5,
+        color: "from-red-300 to-blue-300",
+        title: "Weather App",
+        desc: "I have developed an application using React.js that integrates with an open-source API to fetch weather data for any location. Users can easily search for the weather conditions of any desired place.",
+        img: "/projects/project4.png",
+        link: "https://gleaming-zabaione-64569f.netlify.app/",
     },
 ];
 
@@ -53,8 +61,31 @@ const PortfolioPage = () => {
             transition={{ duration: 1 }}
         >
             <div className="h-[600vh] relative" ref={ref}>
-                <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-                    My Works
+                <div className="w-screen h-[calc(100vh-6rem)] flex flex-col gap-7 items-center justify-center text-8xl font-serif text-center">
+                    Would you like to take a look at my creations?
+                    <motion.svg
+                        initial={{ opacity: 0.2, y: 0 }}
+                        animate={{ opacity: 1, y: "10px" }}
+                        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={50}
+                        height={50}
+                    >
+                        <path
+                            d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+                            stroke="#000000"
+                            strokeWidth="1"
+                        ></path>
+                        <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+                        <path
+                            d="M15 11L12 14L9 11"
+                            stroke="#000000"
+                            strokeWidth="1"
+                        ></path>
+                    </motion.svg>
+                    <span className="text-[28px]">Scroll Down</span>
                 </div>
                 <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
                     <motion.div style={{ x }} className="flex">
@@ -64,17 +95,17 @@ const PortfolioPage = () => {
                                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                                 key={item.id}
                             >
-                                <div className="flex flex-col gap-8 text-white">
-                                    <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                                <div className="flex flex-col gap-0 text-white">
+                                    <h1 className="text-lg font-bold md:text-xl lg:text-3xl xl:text-4xl">
                                         {item.title}
                                     </h1>
                                     <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                                        <Image src={item.img} alt="" fill />
+                                        <Image src={item.img} alt="" fill className="object-contain" />
                                     </div>
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                                         {item.desc}
                                     </p>
-                                    <Link href={item.link} className="flex justify-end">
+                                    <Link href={item.link} target="_blank" className="flex justify-end">
                                         <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                                     </Link>
                                 </div>
@@ -84,7 +115,7 @@ const PortfolioPage = () => {
                 </div>
             </div>
             <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-                <h1 className="text-8xl">Do you have a project?</h1>
+                <h1 className="text-lg md:text-xl lg:text-2xl xl:text-8xl">Are you in need of a developer for your project?</h1>
                 <div className="relative">
                     <motion.svg
                         animate={{ rotate: 360 }}
@@ -100,7 +131,7 @@ const PortfolioPage = () => {
                         </defs>
                         <text fill="#000">
                             <textPath xlinkHref="#circlePath" className="text-xl">
-                                Front-end Developer and UI Designer
+                                Full-Stack-Developer
                             </textPath>
                         </text>
                     </motion.svg>

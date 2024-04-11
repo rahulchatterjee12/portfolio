@@ -5,14 +5,14 @@ import { motion, useScroll, useInView } from "framer-motion";
 import Image from 'next/image'
 import Brain from '@/components/Brain';
 
-const skils = ["JavaScript", "React.js", "Next.js", "Node.js"]
+const skils = ["JavaScript", "React.js", "Next.js", "Node.js", "Django", "Python", "Selenium", "HTML",
+    "CSS", "Material UI", "GIT", "GitHub/GitLab", "Linux", "Linode", "Django-Rest-Framework", "MongoDB", "Express"]
 
 const AboutPage = () => {
     const containerRef = useRef();
 
     const { scrollYProgress } = useScroll({ container: containerRef });
     const skillRef = useRef();
-    // const isSkillRefInView = useInView(skillRef, {once:true});
     const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
     const experienceRef = useRef();
@@ -42,10 +42,10 @@ const AboutPage = () => {
                         </p>
                         {/* SUMMARY QUOTE */}
                         <span className="italic">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
                         </span>
                         {/* SUMMARY SIGN SVG*/}
-                        <div className="self-end">
+                        {/* <div className="self-end">
                             <svg
                                 width="185"
                                 height="77"
@@ -59,7 +59,7 @@ const AboutPage = () => {
                                     strokeWidth="2"
                                 />
                             </svg>
-                        </div>
+                        </div> */}
                         {/* SUMMARY SCROLL SVG */}
                         <motion.svg
                             initial={{ opacity: 0.2, y: 0 }}
@@ -235,6 +235,10 @@ const AboutPage = () => {
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
                                         May 2023 - July 2023{" "}
+                                    </div>
+                                    {/* JOB COMPANY */}
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                                        EyePune
                                     </div>
                                 </div>
                                 {/* CENTER */}
