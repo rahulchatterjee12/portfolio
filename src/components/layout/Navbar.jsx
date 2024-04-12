@@ -75,7 +75,7 @@ const Navbar = () => {
                     <Link
                         href={link.url}
                         key={link.url}
-                        className={`px-2 py-1 rounded bg-${pathname === link.url ? "black" : ""} text-${pathname === link.url ? "white" : "black"}`}
+                        className={`px-2 py-1 rounded bg-${pathname === link.url ? "white" : ""} text-${pathname === link.url ? "black" : "white"}`}
                     >{link.title}</Link>
                 ))}
             </div>

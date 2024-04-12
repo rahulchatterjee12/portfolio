@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 const ContactPage = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
-    const text = "Say Something";
+    const text = "Say Something...";
 
     const form = useRef();
 
@@ -35,14 +35,14 @@ const ContactPage = () => {
 
     return (
         <motion.div
-            className="h-full"
+            className="h-full pb-4"
             initial={{ y: "-200vh" }}
             animate={{ y: "0%" }}
             transition={{ duration: 1 }}
         >
             <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
                 {/* TEXT CONTAINER */}
-                <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+                <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center gap-5 justify-center text-white text-6xl">
                     <div>
                         {text.split("").map((letter, index) => (
                             <motion.span
@@ -65,22 +65,22 @@ const ContactPage = () => {
                 <form
                     onSubmit={sendEmail}
                     ref={form}
-                    className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+                    className="h-1/2 lg:h-full lg:w-1/2 bg-[#4698be] rounded-xl text-xl flex flex-col gap-8 justify-center p-24 text-white"
                 >
-                    <span>Dear Rahul ,</span>
+                    <span className="">Dear Rahul ,</span>
                     <textarea
                         rows={6}
-                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        className="bg-transparent border-b-2 border-b-whtie outline-none resize-none"
                         name="user_message"
                     />
                     <span>Enter Your Email:</span>
                     <input
                         name="user_email"
                         type="text"
-                        className="bg-transparent border-b-2 border-b-black outline-none"
+                        className="bg-transparent border-b-2 border-b-white outline-none"
                     />
                     <span>Regards</span>
-                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+                    <button className="bg-[#5869bc] rounded font-semibold text-gray-50 p-4">
                         Send
                     </button>
                     {success && (
