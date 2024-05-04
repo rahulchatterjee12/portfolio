@@ -2,25 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--secondary) var(--primary);
-    font-family: 'Poppins', 'Roboto', sans-serif;
-}
-
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 0px;
+  display: none;
 }
 
-*::-webkit-scrollbar-track {
-    background: var(--primary);
-    border-radius: 1px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: var(--secondary);
-    border-radius: 1px;
-    border: 1px solid var(--primary);
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
